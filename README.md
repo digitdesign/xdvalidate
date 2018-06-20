@@ -1,5 +1,5 @@
 <div align="center">
-	<h4>XDValidate.</h4>
+	<h4>XDVALIDATE.</h4>
 	<p align="center">Intelligent Javascript-Based Form Validation Framework using Regular Expressions.</p>
 	<p align="center">
 		<a href="https://github.com/digitdesign/xdvalidate/releases/latest">
