@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7160fec9-884d-4c28-81c8-fe0aacf154e0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/xdvalidate.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdvalidate.js" beforeDir="false" afterPath="$PROJECT_DIR$/xdvalidate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="xdvalidate.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="xdvalidate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdvalidate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2323">
-              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+            <state relative-caret-position="23">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="69">
+                <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -53,9 +59,12 @@
       <find>maxLenAttr</find>
       <find>);</find>
       <find>/);</find>
+      <find>xd.git</find>
+      <find>https://github.com/digitdesign/xd</find>
     </findStrings>
     <replaceStrings>
       <replace>let maxLenAttr =</replace>
+      <replace>https://github.com/digitdesign/xdvalidate</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -66,6 +75,7 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/xdvalidate.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -139,7 +149,7 @@
       <option name="presentableId" value="Default" />
       <updated>1529478026269</updated>
       <workItem from="1529478027605" duration="1095000" />
-      <workItem from="1529479140748" duration="88000" />
+      <workItem from="1529479140748" duration="388000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore">
       <created>1529478143968</created>
@@ -162,11 +172,32 @@
       <option name="project" value="LOCAL" />
       <updated>1529478946407</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removed unused functions">
+      <created>1529479240557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1529479240557</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed formatting">
+      <created>1529479285950</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1529479285950</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed formatting">
+      <created>1529479319187</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1529479319187</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1183000" />
+    <option name="totallyTimeSpent" value="1483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="825" extended-state="0" />
@@ -181,10 +212,10 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24964234" />
       <window_info anchor="bottom" id="Statistic" order="9" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="11" visible="true" weight="0.32952926" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32952926" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -207,7 +238,9 @@
     <MESSAGE value="Added gitignore" />
     <MESSAGE value="Modified gitignore" />
     <MESSAGE value="Added config files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added config files" />
+    <MESSAGE value="Removed unused functions" />
+    <MESSAGE value="Fixed formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed formatting" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/xdvalidate.js">
@@ -239,8 +272,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xdvalidate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2323">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="69">
+            <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
