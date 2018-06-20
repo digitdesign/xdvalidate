@@ -1,4 +1,5 @@
 'use strict';
+
 class validateForm {
 	constructor() {
 		const dataValidate = 'data-validate';
@@ -92,17 +93,8 @@ class validateForm {
 			}
 		}
 	}
-	static removeErrMessage() {
-		const currEl = document.querySelector('[data-validate]');
-		const elements = currEl.parentNode.getElementsByClassName('text-helper');
-		while (elements.length > 0) {
-			elements[0].parentNode.removeChild(elements[0]);
-		}
-	}
 }
-document.querySelector('[data-validate]').addEventListener('focus', function () {
-	validateForm.removeErrMessage();
-});
+
 document.querySelector('[data-validate]').addEventListener('input', function () {
 	const data = new validateForm();
 	data.formDataValidate();
