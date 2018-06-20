@@ -13,7 +13,6 @@ class validateForm {
             this.currEl.value = this.currEl.value.slice(0, parseInt(maxLenAttr));
         }
     }
-
     formDataValidate() {
         if (this.elAttr) {
             switch (this.elAttr) {
