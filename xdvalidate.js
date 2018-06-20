@@ -1,117 +1,91 @@
 'use strict';
 class validateForm {
 	constructor() {
-		this.errMsg = 'Please enter a value';
-		const dataLength = 'data-length';
 		const dataValidate = 'data-validate';
 		this.currEl = document.querySelector('[data-validate]');
 		this.elAttr = this.currEl.getAttribute(dataValidate);
 	}
-	patternMatch(pattern) {
-		if (this.currEl.value.length <= this.maxLenAttr) {
+	patternMatch(pattern, maxLenAttr) {
+		if (this.currEl.value.length <= parseInt(maxLenAttr)) {
 			this.currEl.value = this.currEl.value.replace(pattern, '');
 		} else {
-			this.currEl.value = this.currEl.value.slice(0, parseInt(this.maxLenAttr));
+			this.currEl.value = this.currEl.value.slice(0, parseInt(maxLenAttr));
 		}
 	}
 	formDataValidate() {
-		if (this.elAttr || this.maxLenAttr) {
+		if (this.elAttr) {
 			switch (this.elAttr) {
 				case 'alpha':
-					this.maxLenAttr = 1024;
-					this.patternMatch(/[^a-zA-Z\s]/);
+					this.patternMatch(/[^a-zA-Z\s]/, 1024);
 					break;
 				case 'numeric':
-					this.maxLenAttr = 256;
-					this.patternMatch(/[^0-9]/);
+					this.patternMatch(/[^0-9]/, 256);
 					break;
 				case 'alphanumeric':
-					this.maxLenAttr = 1024;
-					this.patternMatch(/[^a-zA-Z0-9\s]/i);
+					this.patternMatch(/[^a-zA-Z0-9\s]/i, 1024);
 					break;
-				case 'nospl':
-					this.maxLenAttr = 256;
-					this.patternMatch(/^[_A-z0-9]*((-|\s)*[_A-z0-9])*$/);
+				case 'no-special':
+					this.patternMatch(/^[_A-z0-9]*((-|\s)*[_A-z0-9])*$/, 256);
 					break;
 				case 'name':
-					this.maxLenAttr = 128;
-					this.patternMatch(/[^a-zA-Z\s.’]/);
+					this.patternMatch(/[^a-zA-Z\s.’]/, 128);
 					break;
 				case 'first-name':
-					this.maxLenAttr = 32;
-					this.patternMatch(/[^a-zA-Z.]/);
+					this.patternMatch(/[^a-zA-Z.]/, 32);
 					break;
 				case 'middle-name':
-					this.maxLenAttr = 32;
-					this.patternMatch(/[^a-zA-Z.’]/);
+					this.patternMatch(/[^a-zA-Z.’]/, 32);
 					break;
 				case 'last-name':
-					this.maxLenAttr = 32;
-					this.patternMatch(/[^a-zA-Z.’]/);
+					this.patternMatch(/[^a-zA-Z.’]/, 32);
 					break;
 				case 'email':
-					this.maxLenAttr = 254;
-					this.patternMatch(/[^a-zA-Z0-9!#$%&'*+-/=?^_`{|}~@]/);
+					this.patternMatch(/[^a-zA-Z0-9!#$%&'*+-/=?^_`{|}~@]/, 254);
 					break;
 				case 'username':
-					this.maxLenAttr = 64;
-					this.patternMatch(/[^a-z0-9]/);
+					this.patternMatch(/[^a-z0-9]/, 64);
 					break;
 				case 'tel':
-					this.maxLenAttr = 10;
-					this.patternMatch(/[^0-9]/);
+					this.patternMatch(/[^0-9]/, 10);
 					break;
 				case 'search':
-					this.maxLenAttr = 64;
-					this.patternMatch(/[^a-zA-z0-9]/);
+					this.patternMatch(/[^a-zA-z0-9]/, 64);
 					break;
 				case 'password':
-					this.maxLenAttr = 128;
-					this.patternMatch(/[^0-9\s\w]/);
+					this.patternMatch(/[^0-9\s\w]/, 128);
 					break;
 				case 'organization':
-					this.maxLenAttr = 128;
-					this.patternMatch(/[^a-zA-Z0-9\s]/);
+					this.patternMatch(/[^a-zA-Z0-9\s]/, 128);
 					break;
 				case 'address':
-					this.maxLenAttr = 1024;
-					this.patternMatch(/[^a-zA-Z0-9#.\s]/);
+					this.patternMatch(/[^a-zA-Z0-9#.\s]/, 1024);
 					break;
 				case 'city':
-					this.maxLenAttr = 128;
-					this.patternMatch(/[^a-zA-Z]/);
+					this.patternMatch(/[^a-zA-Z]/, 128);
 					break;
 				case 'country':
-					this.maxLenAttr = 128;
-					this.patternMatch(/[^a-zA-Z0-9]/);
+					this.patternMatch(/[^a-zA-Z0-9]/, 128);
 					break;
 				case 'pan-number':
-					this.maxLenAttr = 10;
-					this.patternMatch(/[^A-Z0-9]/);
+					this.patternMatch(/[^A-Z0-9]/, 10);
 					break;
 				case 'aadhar-number':
-					this.maxLenAttr = 16;
-					this.patternMatch(/[^0-9]/);
+					this.patternMatch(/[^0-9]/, 16);
 					break;
 				case 'postal-code':
-					this.maxLenAttr = 6;
-					this.patternMatch(/[^0-9]/);
+					this.patternMatch(/[^0-9]/, 6);
 					break;
 				case 'cc-name':
-					this.maxLenAttr = 128;
-					this.patternMatch(/[^a-zA-Z\s.’]/);
+					this.patternMatch(/[^a-zA-Z\s.’]/, 128);
 					break;
 				case 'cc-number':
-					this.maxLenAttr = 16;
-					this.patternMatch(/[^0-9]/);
+					this.patternMatch(/[^0-9]/, 16);
 					break;
 				case 'cc-cvv':
-					this.maxLenAttr = 3;
-					this.patternMatch(/[^0-9]/);
+					this.patternMatch(/[^0-9]/, 3);
 					break;
 				case 'amount':
-					this.maxLenAttr = 64;
-					this.patternMatch(/[^0-9]/);
+					this.patternMatch(/[^0-9]/, 64);
 					break;
 				default:
 					break;
