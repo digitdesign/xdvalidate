@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="https://d2h44aw7l5xdvz.cloudfront.net/xd/img/digit-xd-brandmark.svg" width="64" alt="XDValidate" />
+	<h2>XDValidate</h2>
 	<p align="center">Intelligent Javascript-Based Form Validation Framework using Regular Expressions.</p>
 	<p align="center">
 		<a href="https://github.com/digitdesign/xdvalidate/releases/latest">
